@@ -1234,6 +1234,7 @@ blockquote {
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 10px;
+  font-size: 4.3em;
   font-weight: 500;
 }
 
@@ -2225,6 +2226,15 @@ blockquote {
     position: static;
   }
 
+  .cs-h2.bg_black.no-padd-top {
+    font-size: 4em;
+  }
+
+  .cs-h2.black {
+    margin-left: 0;
+    font-size: 4.4em;
+  }
+
   .link-box {
     align-items: center;
     display: flex;
@@ -2253,6 +2263,10 @@ blockquote {
   .heading-25, .heading-26 {
     font-size: 1.5em;
     font-weight: 500;
+  }
+
+  .html-embed-2 {
+    width: 70%;
   }
 }
 
@@ -2451,6 +2465,10 @@ blockquote {
     height: 5em;
   }
 
+  .cs-h2.bg_black.no-padd-top {
+    font-size: 4em;
+  }
+
   .cs-section-title {
     width: 75%;
   }
@@ -2545,6 +2563,7 @@ blockquote {
   .grid {
     flex-direction: row;
     justify-content: space-between;
+    align-self: flex-start;
     display: flex;
   }
 }
@@ -2801,6 +2820,10 @@ blockquote {
     margin-top: 0;
   }
 
+  .cs-h2.bg_black.no-padd-top {
+    font-size: 3em;
+  }
+
   .cs-section-title {
     margin-bottom: 2em;
   }
@@ -2851,6 +2874,10 @@ blockquote {
     font-size: 1.5em;
   }
 
+  .grid {
+    align-self: flex-start;
+  }
+
   .div-block-18 {
     border-right: 1px solid #c7c7c7;
   }
@@ -2871,6 +2898,7 @@ blockquote {
   }
 
   .container {
+    padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
   }
@@ -2887,6 +2915,7 @@ blockquote {
 
   .section.home-hero-top.mob {
     height: 60vh;
+    padding-top: 25%;
   }
 
   .paragraph.large {
@@ -2923,10 +2952,6 @@ blockquote {
   .cs-section-wrapper.full-blck-bg {
     color: #fff;
     background-color: #1e1d1d;
-    margin-left: -16px;
-    margin-right: -16px;
-    padding-left: 8px;
-    padding-right: 8px;
   }
 
   .cs-header-wrapper {
@@ -2989,6 +3014,7 @@ blockquote {
   }
 
   .added-leading {
+    color: #fff;
     font-size: 2.5vw;
   }
 
@@ -3061,9 +3087,11 @@ blockquote {
 
   .cs-h2.bg_black.no-padd-top {
     min-width: 1rem;
-    padding-top: 0;
-    padding-bottom: 0;
-    display: block;
+    padding: 0 20px;
+    font-size: 2.2em;
+    font-weight: 600;
+    line-height: 1.2;
+    display: inline;
   }
 
   .cs-h2.white {
@@ -3075,9 +3103,20 @@ blockquote {
     font-size: 2em;
   }
 
+  .cs-h2.black {
+    color: #000;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    margin-left: 0;
+    font-size: 2.2em;
+    line-height: 1.2;
+    display: flex;
+  }
+
   .cs-section-title {
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 
   .grid-home-hero {
@@ -3298,6 +3337,7 @@ blockquote {
   }
 
   .heading-26 {
+    color: #fff;
     text-align: center;
     justify-content: center;
     font-size: 2em;
@@ -3318,7 +3358,7 @@ blockquote {
   .div-block-19 {
     width: 95%;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #1e1d1d;
     align-self: center;
   }
 
