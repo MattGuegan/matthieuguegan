@@ -898,6 +898,8 @@ blockquote {
 }
 
 .added-leading {
+  border-top: 1px solid #838383;
+  font-size: 1.3vw;
   line-height: 1.8;
 }
 
@@ -1217,6 +1219,22 @@ blockquote {
   margin-top: -10px;
   margin-left: -6px;
   padding-left: 0;
+  font-weight: 500;
+}
+
+.cs-h2.bg_black {
+  color: #fff;
+  background-color: #000;
+  padding: 10px 10px 10px 0;
+}
+
+.cs-h2.bg_black.no-padd-top {
+  text-align: center;
+  margin-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 10px;
+  font-weight: 500;
 }
 
 .cs-section-title {
@@ -2049,13 +2067,38 @@ blockquote {
   margin-right: 40px;
 }
 
-.heading-25, .heading-26 {
+.heading-25 {
   font-size: 2em;
   font-weight: 400;
 }
 
+.heading-26 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 400;
+  text-decoration: none;
+}
+
 .grid {
   align-self: stretch;
+}
+
+.div-block-18 {
+  padding: 10px;
+}
+
+.div-block-19 {
+  color: #fff;
+  background-color: #000;
+  padding: 10px;
+}
+
+.bold-text {
+  color: #fff;
+  background-color: #000;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 1440px) {
@@ -2709,6 +2752,10 @@ blockquote {
     font-size: 2em;
   }
 
+  .added-leading, .added-leading.black {
+    font-size: 1.5vw;
+  }
+
   .cs-section-heading {
     font-size: 1.5em;
   }
@@ -2846,6 +2893,10 @@ blockquote {
     text-align: center;
   }
 
+  .paragraph.large.white {
+    color: #fff;
+  }
+
   .navigation {
     padding-left: 1em;
     padding-right: 1em;
@@ -2869,6 +2920,15 @@ blockquote {
     font-size: 1.7em;
   }
 
+  .cs-section-wrapper.full-blck-bg {
+    color: #fff;
+    background-color: #1e1d1d;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
   .cs-header-wrapper {
     flex-direction: column;
   }
@@ -2887,6 +2947,13 @@ blockquote {
 
   .div-is-25 {
     width: 100%;
+    flex: 0 auto;
+    justify-content: flex-end;
+    display: flex;
+  }
+
+  .div-is-25.hidemmobile {
+    width: 0%;
   }
 
   .div-is-50 {
@@ -2921,6 +2988,15 @@ blockquote {
     height: .7em;
   }
 
+  .added-leading {
+    font-size: 2.5vw;
+  }
+
+  .added-leading.black {
+    color: #000;
+    font-size: 2.5vw;
+  }
+
   .cs-2-column {
     flex-direction: column;
     display: flex;
@@ -2933,6 +3009,10 @@ blockquote {
     font-size: 2.1em;
     font-weight: 400;
     display: flex;
+  }
+
+  .cs-section-heading.white {
+    color: #fff;
   }
 
   .project-wrapper {
@@ -2971,6 +3051,28 @@ blockquote {
   .cs-h2 {
     font-size: 2.2em;
     font-weight: 600;
+  }
+
+  .cs-h2.bg_black {
+    margin-left: 0;
+    padding-left: 10px;
+    display: inline;
+  }
+
+  .cs-h2.bg_black.no-padd-top {
+    min-width: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: block;
+  }
+
+  .cs-h2.white {
+    color: #000;
+    background-color: #f8f7f4;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0;
+    font-size: 2em;
   }
 
   .cs-section-title {
@@ -3190,7 +3292,7 @@ blockquote {
 
   .heading-25 {
     justify-content: center;
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: 600;
     display: flex;
   }
@@ -3198,7 +3300,7 @@ blockquote {
   .heading-26 {
     text-align: center;
     justify-content: center;
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: 600;
   }
 
@@ -3208,12 +3310,16 @@ blockquote {
   }
 
   .div-block-18 {
-    align-self: stretch;
+    width: 95%;
+    background-color: #fff;
+    align-self: center;
   }
 
   .div-block-19 {
+    width: 95%;
     text-align: left;
-    align-self: stretch;
+    background-color: rgba(0, 0, 0, 0);
+    align-self: center;
   }
 
   .bold-text {
@@ -3222,6 +3328,12 @@ blockquote {
 
   .heading-27 {
     font-size: 1.1em;
+  }
+
+  .html-embed-2 {
+    width: 50%;
+    justify-content: flex-end;
+    display: flex;
   }
 }
 
