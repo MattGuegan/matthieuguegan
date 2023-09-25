@@ -2842,6 +2842,10 @@ blockquote {
     height: 60vh;
   }
 
+  .paragraph.large {
+    text-align: center;
+  }
+
   .navigation {
     padding-left: 1em;
     padding-right: 1em;
@@ -2925,7 +2929,9 @@ blockquote {
   .cs-section-heading {
     text-align: center;
     justify-content: center;
-    font-size: 1.5em;
+    margin-bottom: .5em;
+    font-size: 2.1em;
+    font-weight: 400;
     display: flex;
   }
 
@@ -2960,6 +2966,11 @@ blockquote {
 
   .arrow-down.large {
     height: 3em;
+  }
+
+  .cs-h2 {
+    font-size: 2.2em;
+    font-weight: 600;
   }
 
   .cs-section-title {
@@ -3179,16 +3190,16 @@ blockquote {
 
   .heading-25 {
     justify-content: center;
-    font-size: 1.6em;
-    font-weight: 500;
+    font-size: 2.2em;
+    font-weight: 600;
     display: flex;
   }
 
   .heading-26 {
     text-align: center;
     justify-content: center;
-    font-size: 1.6em;
-    font-weight: 500;
+    font-size: 2.2em;
+    font-weight: 600;
   }
 
   .grid {
@@ -3203,6 +3214,14 @@ blockquote {
   .div-block-19 {
     text-align: left;
     align-self: stretch;
+  }
+
+  .bold-text {
+    font-weight: 600;
+  }
+
+  .heading-27 {
+    font-size: 1.1em;
   }
 }
 
