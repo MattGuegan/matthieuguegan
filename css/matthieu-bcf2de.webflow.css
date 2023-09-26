@@ -245,6 +245,10 @@ blockquote {
   overflow: hidden;
 }
 
+.section.home-hero-top.mob {
+  display: flex;
+}
+
 .section.is-footer {
   min-height: 110vh;
   color: #1e1d1d;
@@ -899,6 +903,7 @@ blockquote {
 
 .added-leading {
   border-top: 1px solid #838383;
+  padding-top: 20px;
   font-size: 1.3vw;
   line-height: 1.8;
 }
@@ -2091,7 +2096,7 @@ blockquote {
 .div-block-19 {
   color: #fff;
   background-color: #000;
-  padding: 10px;
+  padding: 10px 10px 0;
 }
 
 .bold-text {
@@ -2100,6 +2105,37 @@ blockquote {
   padding-left: 20px;
   padding-right: 20px;
   font-weight: 600;
+}
+
+.image-15 {
+  filter: blur(19px);
+  mix-blend-mode: normal;
+}
+
+.text-block {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 13rem;
+  font-weight: 500;
+  display: block;
+  overflow: hidden;
+}
+
+.marquee-content.scroll {
+  min-width: 100%;
+  grid-column-gap: 1rem;
+  grid-row-gap: 0px;
+  flex: none;
+  justify-content: space-around;
+  display: flex;
+}
+
+.marquee {
+  width: 100%;
+  grid-column-gap: 1rem;
+  grid-row-gap: 0px;
+  display: flex;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 1440px) {
@@ -2261,7 +2297,7 @@ blockquote {
   }
 
   .heading-25, .heading-26 {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 500;
   }
 
@@ -2298,6 +2334,10 @@ blockquote {
 
   .container.cs-hero-image {
     padding-top: 0;
+  }
+
+  .section.is-footer.ft {
+    min-height: 100vh;
   }
 
   .section.cs-hero-section {
@@ -2421,6 +2461,10 @@ blockquote {
 
   .arrow-menu-link, .menu-arrow-down {
     height: .6em;
+  }
+
+  .added-leading {
+    font-size: 2vw;
   }
 
   .cs-2-column {
@@ -2566,6 +2610,11 @@ blockquote {
     align-self: flex-start;
     display: flex;
   }
+
+  .marquee-content.scroll {
+    min-width: 100%;
+    flex: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2579,6 +2628,18 @@ blockquote {
 
   h3 {
     font-size: 1.5em;
+  }
+
+  .container {
+    padding-bottom: 2em;
+  }
+
+  .section.home-hero-top.mob {
+    justify-content: space-around;
+  }
+
+  .section.is-footer.ft {
+    min-height: 100vh;
   }
 
   .section.cs-hero-section {
@@ -2772,7 +2833,7 @@ blockquote {
   }
 
   .added-leading, .added-leading.black {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
   }
 
   .cs-section-heading {
@@ -2830,6 +2891,10 @@ blockquote {
 
   .hero-subtext {
     margin-top: -7px;
+  }
+
+  .container-marquee {
+    padding-top: 4vh;
   }
 
   .video-parent {
@@ -2914,8 +2979,12 @@ blockquote {
   }
 
   .section.home-hero-top.mob {
-    height: 60vh;
+    height: 100vh;
     padding-top: 25%;
+  }
+
+  .section.is-footer.ft {
+    min-height: 80vh;
   }
 
   .paragraph.large {
@@ -2993,12 +3062,20 @@ blockquote {
     margin-top: 1em;
   }
 
+  .footer-wrapper {
+    margin-bottom: 0;
+  }
+
   .div-is-30 {
     width: 100%;
   }
 
   .div-is-60.cs-info-wrapper {
     margin-bottom: 2em;
+  }
+
+  .copyright {
+    margin-bottom: -16px;
   }
 
   .cs-hero-copy {
@@ -3015,12 +3092,12 @@ blockquote {
 
   .added-leading {
     color: #fff;
-    font-size: 2.5vw;
+    font-size: 4vw;
   }
 
   .added-leading.black {
     color: #000;
-    font-size: 2.5vw;
+    font-size: 4vw;
   }
 
   .cs-2-column {
@@ -3346,20 +3423,24 @@ blockquote {
 
   .grid {
     flex-direction: column;
-    align-items: flex-start;
+    flex: 0 auto;
+    align-self: center;
+    align-items: stretch;
   }
 
   .div-block-18 {
-    width: 95%;
+    width: 100%;
     background-color: #fff;
+    border-right-style: none;
     align-self: center;
   }
 
   .div-block-19 {
-    width: 95%;
+    width: 100%;
     text-align: left;
     background-color: #1e1d1d;
     align-self: center;
+    padding-bottom: 10px;
   }
 
   .bold-text {
@@ -3367,13 +3448,20 @@ blockquote {
   }
 
   .heading-27 {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 
   .html-embed-2 {
-    width: 50%;
+    width: 90%;
     justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: -66px;
     display: flex;
+  }
+
+  .text-block {
+    margin-top: 10px;
+    font-size: 8rem;
   }
 }
 
