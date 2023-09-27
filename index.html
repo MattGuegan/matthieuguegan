@@ -299,42 +299,36 @@ body:hover .cursor {opacity:1.0;}
 $('a').mouseleave(function() {
   $('.cursor').click();
 });
-      $(document).ready(function() {
-  $('[svg="animated"]').css({
-    opacity: 0,
-    transition: "opacity 400ms ease"
-  });
-
-<script>
+</script>
+  <script>
   $(document).ready(function() {
     $('[svg="animated"]').css({
       opacity: 0,
       transition: "opacity 400ms ease"
     });
-
-    $('[svg="animated"] path').each(function() {
-      var pathLength = this.getTotalLength();
-      $(this).attr({
-        "stroke-dasharray": pathLength,
-        "stroke-dashoffset": pathLength
-      });
-    });
-
-    // Trigger animation on page load
-    $('[svg="animated"]').each(function() {
-      var svgAnimated = $(this);
-      var animationDuration = svgAnimated.attr('svg-animation-time') || 5000;
-      setTimeout(function() {
-        svgAnimated.css("opacity", 1);
-        svgAnimated.find('path').css({
-          transition: "stroke-dashoffset " + animationDuration + "ms ease-out",
-          "stroke-dashoffset": 0
+    $(window).on("load resize scroll", function() {
+      $('[svg="animated"] path').each(function() {
+        var pathLength = this.getTotalLength();
+        $(this).attr({
+          "stroke-dasharray": pathLength,
+          "stroke-dashoffset": pathLength
         });
-      }, 100); // You can adjust the delay time if needed
+        var svgAnimated = $(this).closest('[svg="animated"]');
+        var svgAnimatedTop = svgAnimated.offset().top;
+        var svgAnimatedHeight = svgAnimated.outerHeight();
+        var windowHeight = $(window).height();
+        var windowScrollTop = $(window).scrollTop();
+        var animationDuration = svgAnimated.attr('svg-animation-time') || 5000;
+        if (windowScrollTop + windowHeight > svgAnimatedTop && windowScrollTop < svgAnimatedTop + svgAnimatedHeight) {
+          $(svgAnimated).css("opacity", 1);
+          $(this).css({
+            transition: "stroke-dashoffset " + animationDuration + "ms ease-out",
+            "stroke-dashoffset": 0
+          });
+        }
+      });
     });
   });
 </script>
-
-
 </body>
 </html>
