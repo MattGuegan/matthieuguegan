@@ -1319,7 +1319,9 @@ blockquote {
 }
 
 .hero-intro-copy {
+  width: 67%;
   flex-direction: row;
+  justify-content: space-around;
   display: flex;
 }
 
@@ -2138,6 +2140,23 @@ blockquote {
   overflow: hidden;
 }
 
+.html-embed-3 {
+  z-index: 1;
+  width: 60%;
+  justify-content: flex-end;
+  align-items: stretch;
+  display: block;
+  position: absolute;
+  top: 8%;
+  bottom: 0%;
+  left: auto;
+  right: 8%;
+}
+
+.div-block-20 {
+  width: 5%;
+}
+
 @media screen and (min-width: 1440px) {
   body {
     color: #1e1d1d;
@@ -2167,6 +2186,10 @@ blockquote {
     height: auto;
     flex-direction: row;
     display: block;
+  }
+
+  .section.home-hero-top.mob {
+    display: flex;
   }
 
   .section.is-footer {
@@ -2276,6 +2299,10 @@ blockquote {
     display: flex;
   }
 
+  .hero-intro-copy {
+    justify-content: space-around;
+  }
+
   .divider-2 {
     background-color: #1e1d1d;
     margin-bottom: 0;
@@ -2303,6 +2330,20 @@ blockquote {
 
   .html-embed-2 {
     width: 70%;
+  }
+
+  .html-embed-3 {
+    width: 60%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    position: absolute;
+    top: 4%;
+    bottom: 0%;
+    left: 50%;
+    right: 0%;
   }
 }
 
@@ -2414,7 +2455,7 @@ blockquote {
   }
 
   .div-is-25 {
-    width: 35%;
+    width: 100%;
   }
 
   .div-is-50.cs-div-right {
@@ -2517,6 +2558,12 @@ blockquote {
     width: 75%;
   }
 
+  .hero-intro-copy {
+    justify-content: space-around;
+    margin-left: 41px;
+    display: flex;
+  }
+
   .whipe {
     display: block;
   }
@@ -2611,9 +2658,26 @@ blockquote {
     display: flex;
   }
 
+  .heading-27 {
+    font-size: 1.4rem;
+  }
+
   .marquee-content.scroll {
     min-width: 100%;
     flex: none;
+  }
+
+  .html-embed-3 {
+    width: 100%;
+    top: 29%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    overflow: hidden;
+  }
+
+  .div-block-20 {
+    overflow: hidden;
   }
 }
 
@@ -2775,6 +2839,10 @@ blockquote {
 
   .div-is-25 {
     width: 50%;
+  }
+
+  .div-is-25.hidemmobile {
+    width: 0%;
   }
 
   .div-is-75, .div-is-50 {
@@ -2946,6 +3014,10 @@ blockquote {
   .div-block-18 {
     border-right: 1px solid #c7c7c7;
   }
+
+  .html-embed-3 {
+    top: 31%;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -2981,6 +3053,7 @@ blockquote {
   .section.home-hero-top.mob {
     height: 100vh;
     padding-top: 25%;
+    display: flex;
   }
 
   .section.is-footer.ft {
@@ -3042,7 +3115,7 @@ blockquote {
   .div-is-25 {
     width: 100%;
     flex: 0 auto;
-    justify-content: flex-end;
+    justify-content: space-between;
     display: flex;
   }
 
@@ -3212,6 +3285,14 @@ blockquote {
     margin-left: -2vw;
     font-size: 23vw;
     display: block;
+  }
+
+  .hero-intro-copy {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0;
+    display: flex;
   }
 
   .whipe {
@@ -3448,7 +3529,10 @@ blockquote {
   }
 
   .heading-27 {
+    flex: 0 auto;
+    justify-content: center;
     font-size: 1.2em;
+    display: flex;
   }
 
   .html-embed-2 {
@@ -3462,6 +3546,14 @@ blockquote {
   .text-block {
     margin-top: 10px;
     font-size: 8rem;
+  }
+
+  .html-embed-3 {
+    width: 100%;
+    object-fit: fill;
+    position: absolute;
+    top: 20%;
+    overflow: visible;
   }
 }
 
